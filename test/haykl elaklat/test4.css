@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 200px;
+box-shadow:0 .5em 1.5em rgba(0,0,0,.1) ;
+
+}
+.icons{
+    display: flex;
+    align-items: center;
+
+}
+.icons i{
+    margin-left: .7em;
+    padding: .7em;
+    font-size:1.2em;
+    color: #ed2e2e;
+    transition: .3s;
+}
+.icons i{
+    border-radius: 10%;
+}
+.icons a :hover{
+    background-color: #ed2e2e;
+    color: white;
+    transform: scale(1.1);
+}
+#sun i{
+    border-radius: 50%;
+}
+#sun :hover {
+    transform: rotate(360deg);
+}
+.exa{
+    height: 1000vh;
+    background: antiquewhite;
+}
+.akla {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    height: 36vh;
+    border-bottom: 5px solid #e7d166;
+}
+.akla-title img{
+    width: 271px;
+    height: 177px
+}
+.aklan-title {
+    width: fit-content;
+    margin: auto;
+    background: #cf9d63;
+    padding: 0px 19px;
+}
+.akla-content {
+    width: 71ch;
+    padding: 25px;
+    background: #e2be95;
+    border-radius: 8px;
+}
+.akla-pra{
+    margin-bottom: 23px;
+}
+.akla-button{
+    text-decoration: none;
+
+}
+.so3ra{
+    margin-left: 55px;
+}

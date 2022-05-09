@@ -1,0 +1,168 @@
+*{
+    padding: 0; margin: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 200px;
+    box-shadow: 0 0.5em 1.5em rgb(250 250 250 / 10%);
+    background-color: #212121;
+}
+body{
+    background-color: black;
+}
+.icons{
+    display: flex;
+    align-items: center;
+
+}
+.icons i{
+    margin-left: .7em;
+    padding: .7em;
+    font-size:1.2em;
+    color: #ed2e2e;
+    transition: .3s;
+}
+.icons i{
+    border-radius: 10%;
+}
+.icons a :hover{
+    background-color: #ed2e2e;
+    color: white;
+    transform: scale(1.1);
+}
+#sun i{
+    border-radius: 50%;
+}
+#sun :hover {
+    transform: rotate(360deg);
+}
+
+:root{
+    --clr-neutral-900:hsl(207,19%,9%);
+    --clr-neutral-100:hsl(0,0%,100%);
+    --clr-accent-400:#42f584;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.card-content h2 {
+    margin-bottom: 20px;
+    margin-left: 19px;
+}
+.egypt .card-content h2{
+    margin-left: 4px;
+}
+.aksam {
+    display: flex;
+    height: 89vh;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    padding: 31px;
+    flex-wrap: wrap;
+}
+.card{
+    color: var(--clr-neutral-100);
+    background-image: url(imagearab.png);
+    background-size: cover;
+    padding: 10rem 0 0;
+    max-width: 25ch;
+    height: 332px;
+    margin-left: 23px;
+    border-radius: 9px;
+    transition: 0.5s ease;
+    overflow: hidden;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+.card-content {
+   --padding: 21px;
+    padding: var(--padding);
+    background:  linear-gradient(rgba(0, 0, 0, 0),
+    rgb(0 0 0/ 30%)20%
+    ,rgba(0, 0, 0, 1)  );
+    border-radius: 9px;
+    transform: translateY(65%);
+    transition: .5s ease;
+}
+.card:hover .card-content{
+    transform: translateY(0%);
+}
+.card-title{
+    position: relative;
+    width: max-content;
+}
+.card-title::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    left: calc(var(--padding)*-1);
+    bottom: -4px;
+    background: var(--clr-accent-400);
+    width:calc(100% + var(--padding)) ;
+    transform: scaleX(0);
+    transform-origin: left;/*3ashan ybda2 men el left*/
+    transition: .8s;
+}
+.card:hover .card-title::after{
+    transform: scaleX(1);
+}
+.egypt:hover .card-title::after{
+    background-color: #ffe821;
+}
+.syrian:hover .card-title::after{
+    background-color: #b0743f;
+}
+.elkalig:hover .card-title::after{
+    background-color: aqua;
+}
+
+.card a {
+    display: block;
+    margin-top: 4px;
+    width: fit-content;
+    padding: 4px 4px;
+    border-radius: 4px;
+}
+.button{
+    cursor:pointer;
+    text-decoration: none;
+    display: inline-block;
+    color: var(--clr-neutral-900);
+    background-color: var(--clr-accent-400);
+    padding: 4px 3px;
+    transition: .3s ease;
+}
+.aksam a:hover{
+    transform: scale(1.1);
+}
+
+.egypt:hover a{
+background-color: #ffe821;
+
+}
+.syrian:hover a{
+background-color: #b0743f;
+
+}
+.elkalig:hover a{
+background-color: aqua;
+
+}
+.egypt{
+    background-image: url(Capture.PNG);
+}
+
+.syrian{
+    background-image: url(sortsoria.jpeg);
+    
+}
+.elkalig{
+    background-image: url(sortelkalig.png);
+}
