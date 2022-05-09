@@ -1,0 +1,234 @@
+.main-card{
+    background: rgb(239,238,238);
+    border:1px solid rgba(255,255,255,0.20);
+    border-radius:10px;
+    width: 100%;
+    position:relative;
+    border:none;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 200px;
+    box-shadow: 0 0.5em 1.5em rgb(250 250 250 / 10%);
+    background-color: #212121;
+}
+.icons{
+    display: flex;
+    align-items: center;
+
+}
+.icons i{
+    margin-left: .7em;
+    padding: .7em;
+    font-size:1.2em;
+    color: #ed2e2e;
+    transition: .3s;
+}
+.icons i{
+    border-radius: 10%;
+}
+.icons a :hover{
+    background-color: #ed2e2e;
+    color: white;
+    transform: scale(1.1);
+}
+#sun i{
+    border-radius: 50%;
+}
+#sun :hover {
+    transform: rotate(360deg);
+}
+.container{
+    padding: 0.5em;
+    height: fit-content;
+}
+.card{
+    width:80% ;
+    margin:auto;
+    background: rgb(239,238,238);
+    box-shadow:12px 12px 16px 0 rgba(0,0,0,0.25),
+    -8px -8px 12px 0 rgba(255,255,255,0.3);
+    border:none;
+}
+.card::before{
+    content:'';
+    position: absolute;
+    top:-2px;
+    width:0;
+    height:0;
+    background: transparent;
+    border-top:5px solid transparent;
+}
+
+.layer{
+    position:absolute;
+    top:0;
+    z-index:0;
+    width:100%;
+    background: linear-gradient(to right, #f6a425,#fdda1b);
+    height:150px;
+    border-radius:20px 20px 75px 75px;
+}
+.layer2{
+    position:absolute;
+    top:0;
+    z-index:0;
+    width:100%;
+    background: linear-gradient(to right, #43b645,#a8e82c);
+    height:150px;
+    border-radius:20px 20px 75px 75px;
+}
+.layer3{
+    position:absolute;
+    top:0;
+    z-index:0;
+    width:100%;
+    background: linear-gradient(to right, #fe3180,#fc5da3);
+    height:150px;
+    border-radius:20px 20px 75px 75px;
+}
+.layer4{
+    position:absolute;
+    top:0;
+    z-index:0;
+    width:100%;
+    background: linear-gradient(to right, #25b6af,#00ffff);
+    height:150px;
+    border-radius:20px 20px 75px 75px;
+}
+.layer5{
+    position:absolute;
+    top:0;
+    z-index:0;
+    width:100%;
+    background: linear-gradient(to right, #9d03cc,#c404ff);
+    height:150px;
+    border-radius:20px 20px 75px 75px;
+}
+.layer6{
+    position:absolute;
+    top:0;
+    z-index:0;
+    width:100%;
+    background: linear-gradient(to right, #ff6b15,#ff8138);
+    height:150px;
+    border-radius:20px 20px 75px 75px;
+}
+.layer7{
+    position:absolute;
+    top:0;
+    z-index:0;
+    width:100%;
+    background: linear-gradient(to right, #ff174a,#ff5479);
+    height:150px;
+    border-radius:20px 20px 75px 75px;
+}
+.layer8{
+    position:absolute;
+    top:0;
+    z-index:0;
+    width:100%;
+    background: linear-gradient(to right, #374bff,#5b6bfc);
+    height:150px;
+    border-radius:20px 20px 75px 75px;
+}
+.layer9{
+    position:absolute;
+    top:0;
+    z-index:0;
+    width:100%;
+    background: linear-gradient(to right, #b5ff2b,#bdf84f);
+    height:150px;
+    border-radius:20px 20px 75px 75px;
+}
+.layer10{
+    position:absolute;
+    top:0;
+    z-index:0;
+    width:100%;
+    background: linear-gradient(to right, #ff5a28,#fd6c40);
+    height:150px;
+    border-radius:20px 20px 75px 75px;
+}
+.round,.round1,.round2,.round3,.round4,.round5,.round6,.round7,.round8,.round9,.round10{
+position:absolute;
+top:-29px;
+left:-31px;
+z-index:0;
+width:60px;
+margin:0% 50%;
+background: linear-gradient(to right, #f6a425,#fdda1b);
+height:60px;
+border-radius:50%;
+text-align: center;
+border:5px solid #fff;
+box-shadow:12px 12px 16px 0 rgba(0,0,0,0.25),
+    -8px -8px 12px 0 rgba(255,255,255,0.3);
+}
+.card-text{
+    text-align: center;
+    font-size:14px;
+}
+.p{
+    margin-top:5px;
+    font-size:25px;
+    color:#fff;
+    font-weight:bold;
+}
+.round1{
+    background: linear-gradient(to right, #43b645,#a8e82c);
+}
+.round2{
+    background: linear-gradient(to right, #fe3180,#fc5da3); 
+}
+.round3{
+    background: #25b6af; 
+}
+.round4{
+    background: #9d03cc; 
+}
+.round5{
+    background: #ff6b15; 
+}
+.round6{
+    background: #ff174a; 
+}
+.round7{
+    background: #374bff; 
+}
+.round8{
+    background: #b5ff2b; 
+}
+.round9{
+    background: #ff5a28; 
+}
+
+.svg-icon{
+    width:39px;
+    display:flex;
+    margin:auto;
+}
+.red{
+    color:#f6a425
+}
+.green{
+    color:#43b645;
+}
+.pink{
+    color:#fe3180;
+}
+.row{
+    justify-content: center;
+}
+body{
+    background-color: black;
+}
+
+
+@media(max-width:1023px) and (min-width:0px){
+    header{
+        padding: .5em 1em;
+    
+    }
+    }
