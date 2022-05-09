@@ -1,0 +1,120 @@
+*{
+    padding: 0; margin: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 200px;
+    box-shadow: 0 0.5em 1.5em rgb(250 250 250 / 10%);
+    background-color: #212121;
+}
+body{
+    background-color: black;
+}
+.icons{
+    display: flex;
+    align-items: center;
+
+}
+.icons i{
+    margin-left: .7em;
+    padding: .7em;
+    font-size:1.2em;
+    color: #ed2e2e;
+    transition: .3s;
+}
+.icons i{
+    border-radius: 10%;
+}
+.icons a :hover{
+    background-color: #ed2e2e;
+    color: white;
+    transform: scale(1.1);
+}
+#sun i{
+    border-radius: 50%;
+}
+#sun :hover {
+    transform: rotate(360deg);
+}
+.elmo7twa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 193vh;
+}
+.container {
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* padding: 30px; */
+    margin-top: 98px;
+}
+.container .card {
+    position: relative;
+    max-width: 300px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgb(0 0 0 / 50%);
+    transition: .3s ease-in-out;
+    height: 136px;
+    margin-top: 95px;
+    background: #212121;
+}
+.container .card:hover{
+    height: 360px;
+}
+.imgbox {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 57px;
+    z-index: 1;
+}
+.container .card .imgbox img {
+    max-width: 100%;
+    border-radius: 4px;
+    width: 187px;
+}
+.container .card .content{
+    position: relative;
+
+margin-top: -140px;
+padding: 10px 15px ;
+text-align: center;
+visibility: hidden;
+opacity: 0;
+transition: .3s ease-in-out;
+color: rgba(255, 255, 255, 0.911);
+}
+.container .card:hover .content{
+    visibility: visible;
+    opacity: 1;
+}
+.container h2{
+    color: #009c00;
+}
+.container a {
+    top: -31px;
+    position: relative;
+    padding: 10px 20px;
+    background: #009c00;
+    border-radius: 15px;
+    width: fit-content;
+    margin: auto;
+    color: black;
+    display: inline-block;
+    transition: .3s ease;
+}
+.container a:hover{
+transform: scale(1.1);
+}
