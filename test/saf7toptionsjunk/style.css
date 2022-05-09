@@ -8,15 +8,12 @@
 body{
     height: fit-content;
 }
-header {
+header{
     display: flex;
     justify-content: space-between;
     padding: 10px 200px;
-    box-shadow: 0 0.5em 1.5em rgb(250 250 250 / 10%);
-    background-color: #212121;
-}
-body{
-    background-color: black;
+box-shadow:0 .5em 1.5em rgba(0,0,0,.1) ;
+
 }
 .icons{
     display: flex;
@@ -71,7 +68,7 @@ box-shadow: inset 300px 0 50px  rgba( 0, 0, 0, 0, 15) ,0 20px 20px rgba(0, 0, 0,
     position: relative;
     width: 100%;
     height:100% ;
-    background: rgb(0, 0, 0);
+    background: #fff;
     z-index: 2;
     display: flex;
     justify-content: center;
@@ -86,16 +83,17 @@ box-shadow: inset 300px 0 50px  rgba( 0, 0, 0, 0, 15) ,0 20px 20px rgba(0, 0, 0,
    max-width: 100%;
    z-index: 1;
 }
-.card .cover::before {
-    content: '';
-    position: absolute;
-    width: 10px;
-    height: 160%;
-    background: #000;
-    transform: rotate(39deg);
-    box-shadow: 0 0 0 15px rgb(248 244 6);
-    transition: 0.5s;
-    transition-delay: 0.5s;
+.card .cover::before 
+{
+     content:'';
+     position: absolute;
+     width: 10px;
+     height: 160%;
+     background: #fff;
+     transform: rotate(39deg);
+     box-shadow: 0 0 0 15px rgb(248, 244, 6);
+     transition: 0.5s;
+     transition-delay: 0.5s;
 }
 
 .card:hover .cover::before 
