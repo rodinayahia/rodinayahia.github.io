@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(images/background.png);
+}
+header{
+    background-color: #ffffffbf;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 200px;
+box-shadow:0 .5em 1.5em rgba(0,0,0,.1) ;
+
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+
+}
+.icons i{
+    margin-left: .7em;
+    padding: .7em;
+    font-size:1.2em;
+    color: #ed2e2e;
+    transition: .3s;
+}
+.icons i{
+    border-radius: 10%;
+}
+.icons a :hover{
+    background-color: #ed2e2e;
+    color: white;
+    transform: scale(1.1);
+}
+#sun i{
+    border-radius: 50%;
+}
+#sun :hover {
+    transform: rotate(360deg);
+}
+.elmo7twa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 76vh;
+}
+.card {
+    position: relative;
+    width: 300px;
+    height: 325px;
+    margin: 20px;
+    border-radius: 20px;
+    transition: .5s ease;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.card:hover{
+    width: 400px;
+}
+.card .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 82%;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card .circle::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    clip-path: circle(120px at center);
+    transition: .5s;
+}
+.card:hover .circle::before{
+    clip-path: circle(400px at center);
+}
+.cocacola .circle::before{
+    background: #f40103;
+}
+.fanta .circle::before{
+    background: #f5831f;
+}
+.sprite .circle::before{
+    background: #00933b;
+}
+.l7up .circle::before{
+    background: #009d46;
+}
+.pepsi .circle::before{
+    background: #4165c6;
+}
+.sunkist .circle::before{
+    background: #424ed8;
+}
+.Sierramist .circle::before{
+    background: #2d7ca9;
+}
+.DietCoke .circle::before{
+    background: rgb(217, 211, 211);
+}
+.DrPepper .circle::before{
+    background: rgb(154, 22, 22);
+}
+.redbull .circle::before{
+    background: #2d7ca9;
+}
+.mountaindew .circle::before{
+    background: #56b500;
+ }
+  .schweppes .circle::before{
+    background: rgb(210 170 57);
+}
+.monster .circle::before{
+  background: #000;
+}
+.mirinda .circle::before{
+  background: #ff8f05;
+}
+.l7up .circle img {
+    top: 10px;
+    left: 10px;
+    border-radius: 151px;
+}
+.card .circle .logo{
+    position: relative;
+    width: 200px;
+    transition: .5s ease;
+
+}
+.card:hover .circle .logo{
+    transform: scale(0);
+}
+.content {
+    position: relative;
+    width: 47%;
+    left: 7%;
+    padding: 9px 7px 12px 27px;
+    top: -7%;
+    opacity: 0;
+    transform: .5s ease;
+}
+.card:hover .content{
+    left: 0;
+    opacity: 1;
+    transition: .5s;
+}
+.content h2 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 25px;
+    line-height: 36px;
+    margin-top: -8px;
+}
+.content p{
+    color: white;
+    word-spacing: 3px;
+    line-height: 20px;
+}
+.content a{
+    position: relative;
+    color: black;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight:500;
+    transition: .5s ease;
+}
+.content a:hover{
+    transform: scale(1.1);
+}
+.card .product {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    height: 383px;
+    transition: .5s ease;
+    transition-delay: 0s;
+}
+.card:hover .product{
+    left: 72%;
+    transform:translate(-50%,-50%) scale(1);
+    transition-delay: .3s;
+}
+.montag{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media(max-width:1023px) and (min-width:0px){
+    header{
+        padding: .5em 1em;
+    
+    }
+    }
