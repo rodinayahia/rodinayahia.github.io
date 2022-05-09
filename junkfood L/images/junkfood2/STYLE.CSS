@@ -1,0 +1,189 @@
+
+  
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+body{
+    height: fit-content;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 200px;
+box-shadow:0 .5em 1.5em rgba(0,0,0,.1) ;
+
+}
+.icons{
+    display: flex;
+    align-items: center;
+
+}
+.icons i{
+    margin-left: .7em;
+    padding: .7em;
+    font-size:1.2em;
+    color: #ed2e2e;
+    transition: .3s;
+}
+.icons i{
+    border-radius: 10%;
+}
+.icons a :hover{
+    background-color: #ed2e2e;
+    color: white;
+    transform: scale(1.1);
+}
+#sun i{
+    border-radius: 50%;
+}
+#sun :hover {
+    transform: rotate(360deg);
+}
+
+
+.montag
+{
+
+display: flex;
+justify-content: center;
+align-items: center;
+background-color:#f0d097 ;
+
+}
+
+.card
+
+{
+position: relative;
+margin: 40px;
+width: 50vh;
+height: 60vh;
+background: #fff;
+transform-style: preserve-3d;
+transform: perspective(2000px);
+transition: 0.5s;
+box-shadow: inset 300px 0 50px  rgba( 0, 0, 0, 0, 15) ,0 20px 20px rgba(0, 0, 0, 0, 15);
+
+}
+
+.card:hover
+{
+    transform: perspective(2000px) translateX(50%);
+    box-shadow: inset 20px 0 50px  rgba( 0, 0, 0, 0, 15) ,0 10px 20px rgba(0, 0, 0, 0, 15);
+
+
+}
+
+.card .cover
+{
+    position: relative;
+    width: 100%;
+    height:100% ;
+    background: #fff;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    overflow: hidden;
+    transition: 1s ease-in-out;
+    transform-origin: left;
+}
+
+.card:hover .cover
+{
+    transform: rotateY(180deg);
+}
+
+.card .cover img 
+{
+   max-width: 100%;
+   z-index: 1;
+}
+
+
+.card .cover::before 
+{
+     content:'';
+     position: absolute;
+     width: 10px;
+     height: 160%;
+     background: #fff;
+     transform: rotate(39deg);
+     box-shadow: 0 0 0 15px rgb(186, 139, 89);
+     transition: 0.5s;
+     transition-delay: 0.5s;
+}
+
+.card:hover .cover::before 
+{
+  width: 0;
+  box-shadow: 0 0 0 350px rgb(186, 139, 89) ;
+  transform: rotate(139deg);
+  
+
+}
+.Milkshake .cover::before
+{
+    box-shadow: 0 0 0 15px rgb(186, 139, 89);
+}
+.card:hover .cover::before {
+    box-shadow: 0 0 0 350px rgb(186, 139, 89) ;
+}
+
+.card .details
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+    z-index: 1;
+}
+
+.card .details h2
+{
+    font-weight: 500;
+    font-size: 30px;
+    margin: 5px 0;
+    
+}
+
+.card .details h4
+{
+font-size: 20px;
+color: rgb(168, 100, 16);
+
+
+}
+
+.card .details a
+{
+    display: inline-block;
+    margin-top: 5px;
+    padding: 8px 20px;
+    background: rgb(211, 172, 0);
+    letter-spacing: 1px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    
+    
+}
+
+
+@media(max-width:1023px) and (min-width:0px){
+    header{
+        padding: .5em 1em;
+    
+    }
+    }
