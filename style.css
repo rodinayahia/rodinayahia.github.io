@@ -3,15 +3,12 @@
     font-family: sans-serif;
     text-decoration: none;
 }
-header {
+header{
     display: flex;
     justify-content: space-between;
     padding: 10px 200px;
-    box-shadow: 0 0.5em 1.5em rgb(250 250 250 / 10%);
-    background-color: #212121;
-}
-body{
-    background-color: black;
+box-shadow:0 .5em 1.5em rgba(0,0,0,.1) ;
+
 }
 .icons{
     display: flex;
@@ -166,7 +163,7 @@ footer {
     height: 30vh;
     padding-left: 45px;
     color: white;
-    background-color: #101010;
+    background-color: black;
 }
 footer h2{
 color: #8f0f0f;
@@ -254,13 +251,6 @@ footer a:hover{
     }
     .vegpar{
         color: green;
-    }
-    /*-----------------*/
-    .heabu:hover{
-        background-color: #2ff1ff;
-    }
-    .heapar{
-        color: #1f929a;
     }
     /*-----------------*/
     .junkbu:hover{

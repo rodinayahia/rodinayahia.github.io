@@ -3,12 +3,12 @@
     font-family: sans-serif;
     text-decoration: none;
 }
-header{
+header {
     display: flex;
     justify-content: space-between;
-    padding: 2px 200px;
-box-shadow:0 .5em 1.5em rgba(0,0,0,.1) ;
-
+    padding: 4px 200px;
+    box-shadow: 0 0.5em 1.5em rgb(250 250 250 / 10%);
+    background-color: #212121;
 }
 .icons{
     display: flex;
@@ -40,7 +40,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: sans-serif;
-    background: url(BGllight.png);
+    background: url(darkmood/BG.jpg);
     background-size: cover
 }
 form {
@@ -52,16 +52,16 @@ form {
     transform: translate(-50%,-50%);
     width: 350px;
     height: 350px;
-    background: rgb(255 255 255 / 65%);
+    background: rgb(33 33 33 / 95%);
     border-radius: 15px;
     box-sizing: border-box;
 }
 h1 {
-    color: rgb(14 14 14);
+    color: rgba(255, 255, 255, 0.726);
     text-align: center;
     margin-top: 10%;
 }
-input[type="text"],[type="password"]{
+input[type="text"], [type="password"] {
     position: absolute;
     border: none;
     outline: none;
@@ -70,7 +70,8 @@ input[type="text"],[type="password"]{
     border-bottom: 2px solid #ed2e2e8a;
     background: none;
     padding: 5px;
-    color: #000;}
+    color: #ffffffd1;
+}
 
 input[type="text"]{
     top: 100px;
@@ -101,7 +102,7 @@ p {
     position: absolute;
     top: 225px;
     left: 50px;
-    color: #040404;
+    color: #d1d1d1;
     cursor: pointer;
     font-weight: 500;
 }
